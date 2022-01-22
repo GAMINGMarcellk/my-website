@@ -5,30 +5,19 @@
   box-sizing: border-box;
 }
 
-html {
+body, html {
     scroll-behavior: smooth;
-}
-
-body {
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	background: rgb(25, 25, 30);
-	color: #FFFFFF;
+	color: #ccc;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 .navigation {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,12 +26,11 @@ hr {
     width: 100vw;
     height: 10vh;
     background: rgb(20, 20, 25);
-    z-index: 1;
-    border-bottom: white 2px solid;
+    border-bottom: darkgray 2px solid;
 }
 
 .navigation__logo {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     padding: 3.5vh;
 }
@@ -54,63 +42,69 @@ hr {
 
 
 .navigation__links a {
-    color:white;
+    color: gray;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 35px;
     padding: 10px;
 }
+
+.navigation__links a:hover {
+    color: white;
+}
+  
 
 .navigation__active {
     border-bottom: 2px solid #FFF;
 }
 
 #home {
+    padding-top: 10vh;
     display: flex;
     width: 100vw;
     height: 100vh;
+}
 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.custom__color {
+    color: orange;
 }
 
 .home__container {
     display: flex;
+    margin: 5vw;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 10vw;
-    margin-top: 10vh;
-    gap: 5vh;
+    justify-content: space-evenly;
 }
 
 .home__container__info {
-    margin: auto;
-    display:flex;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 1vw;
 }
 
-.home__container__info__text {
-    margin-left: 2vw;
+.home__container__info p {
+    color: darkgray;
 }
 
-.home__container__info__text p {
-    margin-top: 2vh;
+.home__container__info h1 {
+    font-size: 3em;
+    display:inline;
 }
 
 .home__container__info img {
+    display: block;
     border-radius: 50%;
     border: white 2px solid;
-    height: auto;
 }
 
 .home__container__welcome {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 28px;
 }
 
-.home__container__goal__text p {
-    margin-top: 2vh;
+.home__container__free p {
+    color: darkgray;
 }
 
 .fade-in {

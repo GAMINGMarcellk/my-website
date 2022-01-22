@@ -9,7 +9,7 @@ body, html {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
 	background: rgb(25, 25, 30);
-	color: #ccc;
+	color: white;
 }
 
 body::-webkit-scrollbar {
@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
     width: 100vw;
     height: 10vh;
     background: rgb(20, 20, 25);
-    border-bottom: darkgray 2px solid;
+    border-bottom: white 2px solid;
 }
 
 .navigation__logo {
@@ -83,10 +83,6 @@ body::-webkit-scrollbar {
     gap: 1vw;
 }
 
-.home__container__info p {
-    color: darkgray;
-}
-
 .home__container__info h1 {
     font-size: 3em;
     display:inline;
@@ -95,16 +91,12 @@ body::-webkit-scrollbar {
 .home__container__info img {
     display: block;
     border-radius: 50%;
-    border: white 2px solid;
+    border: white 4px solid;
 }
 
 .home__container__welcome {
     font-weight: bold;
     font-size: 28px;
-}
-
-.home__container__free p {
-    color: darkgray;
 }
 
 .fade-in {

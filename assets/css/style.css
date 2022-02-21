@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
 }
 
 .navigation__logo {
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
     padding: 3.5vh;
 }
@@ -44,8 +44,8 @@ body::-webkit-scrollbar {
 .navigation__links a {
     color: gray;
     text-decoration: none;
-    font-size: 35px;
-    padding: 10px;
+    font-size: 2vw;
+    padding: 1vh;
 }
 
 .navigation__links a:hover {
@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
   
 
 .navigation__active {
-    border-bottom: 2px solid #FFF;
+    border-bottom: 1vh solid #FFF;
 }
 
 #home {
@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
 }
 
 .home__container__info h1 {
-    font-size: 3em;
+    font-size: 3vw;
     display:inline;
 }
 
@@ -96,7 +96,7 @@ body::-webkit-scrollbar {
 
 .home__container__welcome {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.8vw;
 }
 
 .fade-in {
@@ -154,6 +154,24 @@ body::-webkit-scrollbar {
     }
 
     .navigation__links {
+        display: none;
+    }
+
+    .navigation__logo {
+        font-size: 4vw;
+        padding: 3vh;
+    }
+
+    .navigation__links a {
+        font-size: 3vw;
+        padding: 1vh;
+    }
+
+    .home__container__info {
+        flex-direction: column;
+    }
+    
+    .home__container__info img {
         display: none;
     }
 }
